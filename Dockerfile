@@ -7,7 +7,6 @@ RUN apk -U upgrade && \
         curl \
         python3 \
         py-pip && \
-    pip3 install --upgrade --no-cache-dir awscli && \
-    apk del py-pip
+    pip3 install --upgrade --no-cache-dir awscli
 
 ENTRYPOINT ["bash"]
